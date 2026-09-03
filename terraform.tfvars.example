@@ -1,0 +1,36 @@
+# ──────────────────────────────────────────────────────────────
+# terraform.tfvars.example
+# Create and Copy this file to `terraform.tfvars` and adjust the values.
+# ──────────────────────────────────────────────────────────────
+
+region     = "<your-aws-region>"
+account_id = "<your-aws-account-id>"
+environment = "<your-environment>"
+owner       = "<owner-name>"
+
+# S3 artifact store bucket
+artifact_bucket_name = "<codepipeline-artifact-new>"
+
+# ECR repository
+ecr_repository_name = "ecr-repository-new"
+
+# IAM roles / policies
+codepipeline_service_role_name = "codepipeline-default-service-role-new"
+codebuild_service_role_name    = "codebuild-service-role-new"
+codebuild_policy_name          = "codebuild-policy-new"
+
+# CodeBuild
+codebuild_project_name = "prod-codebuild-project-new"
+container_name         = "prod-container-app-revision"
+
+# CodeCommit / pipeline trigger
+codecommit_repository_name = "repo-app"
+source_branch              = "<your-branch>"
+
+# CodePipeline
+codepipeline_name        = "prod-codepipeline-project-new"
+codepipeline_trigger_name = "prod-codepipeline-trigger-new"
+
+# ECS deploy target
+ecs_cluster_name = "prod-cluster-new"
+ecs_service_name = "prod-ecs-service-new"
