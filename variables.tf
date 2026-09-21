@@ -11,7 +11,7 @@ variable "region" {
 variable "account_id" {
   description = "AWS account ID"
   type        = string
-  default     = "392987323540"
+  default     = "<account-id>"
 }
 
 variable "environment" {
@@ -82,7 +82,7 @@ variable "codecommit_repository_name" {
 variable "source_branch" {
   description = "Branch that triggers the pipeline"
   type        = string
-  default     = "ecr-prod"
+  default     = "<branch>"
 }
 
 variable "codepipeline_name" {
